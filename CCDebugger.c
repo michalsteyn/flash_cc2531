@@ -174,7 +174,7 @@ uint8_t cc_error()
  * Delay a particular number of cycles
  */
 struct timespec tp={0,0};
-static int cc_delay_mult=50;
+static int cc_delay_mult=300; //50
 void cc_delay( unsigned char d )
 {
   volatile unsigned int i = cc_delay_mult*d;
